@@ -5,7 +5,7 @@ homepage: "https://github.com/MarioRam0s"
 
 screenshots:
   - description: Preview of the clearable dropdown in action
-    path: assets\example.jpg
+    path: assets/example.jpg
 
 environment:
   sdk: ^3.7.2
