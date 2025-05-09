@@ -4,11 +4,11 @@ A custom Flutter widget that extends `DropdownMenu`, allowing for a clean select
 
 ## Preview
 
-![Preview](https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/example.jpg)
+<img src="https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/example.jpg" width="600" alt="Preview Image">
 
-![Preview](https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/preview.gif)
+<img src="https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/preview.gif" width="600" alt="Preview GIF">
 
-![Preview](https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/preview2.gif)
+<img src="https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/preview2.gif" width="600" alt="Preview GIF 2">
 
 ## ✨ Features
 
