@@ -16,3 +16,11 @@
 ## [1.0.3] - 2025-05-09
 
 - Added preview image for pub.dev listing via `screenshots` in pubspec.yaml.
+
+## [1.0.4] - 2025-05-09
+
+- Added preview image for pub.dev listing via `screenshots` in pubspec.yaml.
+
+## [1.0.5] - 2025-05-09
+
+- Added example folder.
