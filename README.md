@@ -1,39 +1,54 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# clearable_dropdown
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+Un widget personalizado de Flutter que extiende `DropdownMenu`, permitiendo selección limpia (reset) y personalización adicional, ideal para formularios.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+## ✨ Características
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+- Permite limpiar la selección con un botón (`onDeleteSelection`)
+- Soporte para `FocusNode` (útil para validaciones y navegación)
+- Personalización de estilos (`MenuStyle`, íconos, colores, márgenes, etc.)
+- Animación al hacer focus (opcional)
+- Fácil de integrar y reutilizar
 
-## Features
+## 🚀 Instalación
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Agrega esta línea a tu archivo `pubspec.yaml`:
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  clearable_dropdown: ^1.0.0
 ```
 
-## Additional information
+Luego ejecuta:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```bash
+flutter pub get
+```
+
+## 🧪 Uso básico
+
+```dart
+import 'package:clearable_dropdown/clearable_dropdown.dart';
+
+SelectBox(
+  listItems: [
+    CatalogObject(id: 1, name: 'Manzana'),
+    CatalogObject(id: 2, name: 'Naranja'),
+  ],
+  label: 'Fruta',
+  onSelected: (value) {
+    print('Seleccionaste $value');
+  },
+  onDeleteSelection: () {
+    print('Selección eliminada');
+  },
+)
+```
+
+## 📂 Ejemplo
+
+Puedes encontrar un ejemplo completo en la carpeta [`example/`](example/).
+
+## 🤝 Contribuciones
+
+¡Las contribuciones son bienvenidas! Puedes abrir issues o hacer pull requests si deseas proponer mejoras.

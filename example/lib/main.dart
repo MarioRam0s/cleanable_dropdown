@@ -1,4 +1,4 @@
-import 'package:cleanable_dropdown/cleanable_dropdown.dart';
+import 'package:clearable_dropdown/clearable_dropdown.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
             style: TextStyle(fontWeight: FontWeight.bold),
             children: [
               TextSpan(text: '< Lord / Dev > \n\n'),
-              TextSpan(text: 'Flutter Demo Cleanable Dropdown'),
+              TextSpan(text: 'Flutter Demo Clearable Dropdown'),
             ],
           ),
         ),
@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: [
             SizedBox(height: 40),
-            SelectBox(
+            ClearableDropdown(
               listItems: [
                 CatalogObject(id: 0, name: 'Manzana'),
                 CatalogObject(id: 1, name: 'Naranja'),
@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
               focus: focusSelect,
             ),
             SizedBox(height: 40),
-            SelectBox(
+            ClearableDropdown(
               listItems: [
                 CatalogObject(id: 0, name: 'Sunflower'),
                 CatalogObject(id: 1, name: 'Baby'),
@@ -71,31 +71,31 @@ class _MyHomePageState extends State<MyHomePage> {
                 CatalogObject(id: 7, name: 'Firestone'),
               ],
               menuHeight: 500,
-              label: 'Seleccione una cancion - Sin boton de eliminar seleccion',
+              label: 'Seleccione una canción - Sin boton de eliminar selección',
             ),
             SizedBox(height: 40),
-            SelectBox(
+            ClearableDropdown(
               listItems: [
-                CatalogObject(id: 0, name: 'Ingenieria de sistemas'),
-                CatalogObject(id: 1, name: 'Ingenieria en computacion'),
-                CatalogObject(id: 2, name: 'Ingenieria Industrial'),
-                CatalogObject(id: 3, name: 'Ingenieria Quimica'),
-                CatalogObject(id: 4, name: 'Ingenieria Aereoespacial'),
+                CatalogObject(id: 0, name: 'Ingeniería de sistemas'),
+                CatalogObject(id: 1, name: 'Ingeniería en computacion'),
+                CatalogObject(id: 2, name: 'Ingeniería Industrial'),
+                CatalogObject(id: 3, name: 'Ingeniería Química'),
+                CatalogObject(id: 4, name: 'Ingeniería Aeroespacial'),
               ],
               label: 'Seleccione una carrera',
-              valueInitial: 'Ingenieria de sistemas',
+              valueInitial: 'Ingeniería de sistemas',
               enable: false,
               onDeleteSelection: () {},
             ),
             SizedBox(height: 40),
-            SelectBox(
+            ClearableDropdown(
               listItems: [
                 CatalogObject(id: 0, name: 'Futbol'),
                 CatalogObject(id: 1, name: 'Tenis'),
                 CatalogObject(id: 2, name: 'Padel'),
                 CatalogObject(id: 3, name: 'Ajedrez'),
-                CatalogObject(id: 4, name: 'Basket'),
-                CatalogObject(id: 5, name: 'Natacion'),
+                CatalogObject(id: 4, name: 'Básquetbol'),
+                CatalogObject(id: 5, name: 'Natación'),
               ],
               label: 'Seleccione un deporte',
               helperText: 'Seleccione un deporte para continuar',
@@ -112,33 +112,34 @@ class _MyHomePageState extends State<MyHomePage> {
               onDeleteSelection: () {},
             ),
             SizedBox(height: 40),
-            SelectBox(
+            ClearableDropdown(
               listItems: [
-                CatalogObject(id: 0, name: 'Marvel rivals'),
+                CatalogObject(id: 0, name: 'Marvel Rivals'),
                 CatalogObject(id: 1, name: 'League of legends'),
                 CatalogObject(id: 2, name: 'Minecraft'),
                 CatalogObject(id: 3, name: 'Elden ring'),
-                CatalogObject(id: 4, name: 'God of war Raknarok'),
-                CatalogObject(id: 5, name: 'Stronghol'),
+                CatalogObject(id: 4, name: 'God of war Ragnarok'),
+                CatalogObject(id: 5, name: 'Stronghold'),
               ],
               label: 'Seleccione un juego',
               menuHeight: 100,
               errorText: 'Seleccione al menos un registro',
               onDeleteSelection: () {},
+              deleteIcon: Icon(Icons.delete),
             ),
             SizedBox(height: 40),
-            SelectBox(
+            ClearableDropdown(
               listItems: [
                 CatalogObject(id: 0, name: 'Pokemon'),
-                CatalogObject(id: 1, name: 'Tokio Ghoul'),
-                CatalogObject(id: 2, name: 'Kiss x kiss'),
+                CatalogObject(id: 1, name: 'Tokyo Ghoul'),
+                CatalogObject(id: 2, name: 'Kiss x Sis'),
                 CatalogObject(id: 3, name: 'Akame ga kill'),
-                CatalogObject(id: 4, name: 'Slam domn'),
-                CatalogObject(id: 5, name: 'Shingeki no kiojin'),
+                CatalogObject(id: 4, name: 'Slam Dunk'),
+                CatalogObject(id: 5, name: 'Shingeki no Kyojin'),
               ],
               onSelected: (p0) {
                 final snackBar = SnackBar(
-                  content: Text('Selecciono el registro #$p0'),
+                  content: Text('Seleccionó el registro #$p0'),
                   duration: Duration(milliseconds: 400),
                 );
                 ScaffoldMessenger.of(context).showSnackBar(snackBar);
@@ -146,14 +147,14 @@ class _MyHomePageState extends State<MyHomePage> {
               label: 'Seleccione un anime',
               onDeleteSelection: () {
                 final snackBar = SnackBar(
-                  content: Text('reset selection'),
+                  content: Text('Selección eliminada'),
                   duration: Duration(milliseconds: 400),
                 );
                 ScaffoldMessenger.of(context).showSnackBar(snackBar);
               },
             ),
             SizedBox(height: 40),
-            SelectBox(
+            ClearableDropdown(
               listItems: [
                 CatalogObject(id: 0, name: 'Perro'),
                 CatalogObject(id: 1, name: 'Cerdo'),
@@ -180,7 +181,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   height: 5,
                 ),
               ),
-              errorText: 'Error Custom',
+              errorText: 'Error personalizado',
             ),
             SizedBox(height: 100),
           ],
