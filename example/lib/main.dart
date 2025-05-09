@@ -28,7 +28,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  bool isFocus = false;
+  bool isError = false;
 
   FocusNode focusSelect = FocusNode();
   @override
@@ -57,6 +57,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 CatalogObject(id: 1, name: 'Naranja'),
               ],
               focus: focusSelect,
+              errorText:
+                  isError == true
+                      ? 'Debe seleccionar al menos un registro'
+                      : null,
             ),
             SizedBox(height: 40),
             ClearableDropdown(
@@ -188,7 +192,11 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => focusSelect.requestFocus(),
+        onPressed: () {
+          isError = true;
+          focusSelect.requestFocus();
+          setState(() {});
+        },
         child: Icon(Icons.save),
       ),
     );
