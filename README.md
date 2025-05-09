@@ -4,12 +4,11 @@ A custom Flutter widget that extends `DropdownMenu`, allowing for a clean select
 
 ## Preview
 
-<img src="https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/example.jpg" width="600" alt="Preview Image">
-
-<img src="https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/preview.gif" width="600" alt="Preview GIF">
-
-<img src="https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/preview2.gif" width="600" alt="Preview GIF 2">
-
+<p>
+  <img src="https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/example.jpg" width="200"/>
+  <img src="https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/preview.gif" width="200"/>
+  <img src="https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/preview2.gif" width="200"/>
+</p>
 ## ✨ Features
 
 - Allows clearing the selection with a button (`onDeleteSelection`)
