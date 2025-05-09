@@ -5,9 +5,9 @@ A custom Flutter widget that extends `DropdownMenu`, allowing for a clean select
 ## Preview
 
 <p>
-  <img src="https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/example.jpg" width="200"/>
-  <img src="https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/preview.gif" width="200"/>
-  <img src="https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/preview2.gif" width="200"/>
+  <img src="https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/example.jpg" width="210"/>
+  <img src="https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/preview.gif" width="210"/>
+  <img src="https://raw.githubusercontent.com/MarioRam0s/clearable_dropdown/main/assets/preview2.gif" width="210"/>
 </p>
 ## ✨ Features
 
@@ -58,7 +58,7 @@ SelectBox(
 
 You can find a complete example in the example/ folder.
 
-## 🧩 Propiedades de `ClearableDropdown`
+## 🧩 Properties of `ClearableDropdown`
 
 | Property               | Type                      | Description                                                                                            |
 | ---------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------ |

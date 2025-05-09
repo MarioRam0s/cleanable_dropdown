@@ -1,6 +1,6 @@
 name: clearable_dropdown
 description: "DROP-DOWN MENU WITH BUTTON TO DELETE THE SELECTED VALUE"
-version: 1.0.0
+version: 1.0.2
 homepage: "https://github.com/MarioRam0s"
 
 environment:
