@@ -1,15 +1,17 @@
 # Ignora archivos de configuración del IDE
-*.iml
+
+\*.iml
 .idea/
 .vscode/
 
 # Ignora gifs y otros binarios grandes
+
 assets/preview.gif
 assets/preview2.gif
-assets/example.jpg
 example/
 
 # Archivos temporales o de sistema
+
 .DS_Store
 .packages
 .dart_tool/
@@ -18,6 +20,7 @@ example/
 pubspec.lock
 
 # Otras posibles cosas innecesarias
+
 test/
 example/android/
 example/ios/
@@ -28,6 +31,7 @@ example/web/
 example/test/
 
 # Archivos de plataforma específicos (generados o no necesarios)
+
 android/
 ios/
 macos/
