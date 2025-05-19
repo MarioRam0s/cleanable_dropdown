@@ -25,7 +25,7 @@ Add this line to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  clearable_dropdown: ^1.0.0
+  clearable_dropdown: ^1.0.5
 ```
 
 Then run:
